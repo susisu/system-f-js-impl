@@ -25,10 +25,10 @@ T ::=
 ## Instructions
 ```
 Variable X;       -- assumes type variable X
-Axiom x: T;       -- assumes variable x: T
+Axiom x: T;       -- assumes variable x: T (synonym: Hypothesis)
 Define x = t;     -- defines x = t
-Theorem x: T = t; -- defines x = t and checks its type is T
-Reduce t;         -- performs full beta-reduction
+Theorem x: T = t; -- checks t has a type T and defines x = t (synonyms: Lemma, Corollary)
+Reduce t;         -- performs full beta-reduction on t
 Print x;          -- prints term bound to x
 Clear;            -- clears the context
 ```
