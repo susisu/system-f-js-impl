@@ -1,0 +1,9 @@
+[ignore]
+.*/temp/.*
+
+[include]
+
+[libs]
+flow-typed/
+
+[options]
